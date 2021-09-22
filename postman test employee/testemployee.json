@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_postman_id": "eb0c01e1-8abd-4cd9-9141-8eff6774ab84",
+    "name": "Employee",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Employee",
+      "_postman_id": "36878ab9-6062-48fa-b508-35a731c32314",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": null
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Employee",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "8bace59f-1ebc-40fd-a65b-8396ad7fa18f",
+            "exec": [
+              "pm.test(\"All Employee Record found Successfully\", function () {",
+              "    pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "5364893e-5663-4e6d-8556-85013c441fbd",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseurl}}/employees"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Employee",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "e3431fca-f6e2-40ce-bbf4-a9eb61978830",
+            "exec": [
+              "pm.test(\"Single Employee Record found Successfully\", function () {",
+              "    pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "9dd07492-a040-4e59-a227-12796892f852",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseurl}}"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Employee",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "43be4bd4-f785-4e46-8bcf-3257c840d845",
+            "exec": [
+              "pm.test(\"Employee Record updated Successfully\", function () {",
+              "    pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "bdc6c3e2-e60c-444b-82e9-4313fb1192f4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": "{{baseurl}}"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Employee",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "376c12af-cf08-4a18-a19e-3bff79a52cf8",
+            "exec": [
+              "pm.test(\"Employee Record deleted Successfully\", function () {",
+              "    pm.response.to.have.status(200);",
+              "    });"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "25430b59-140a-4ccb-a4f1-bfb652458eb7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseurl}}"
+      },
+      "response": []
+    }
+  ]
+}
