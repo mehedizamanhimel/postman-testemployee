@@ -149,7 +149,7 @@
       "request": {
         "method": "DELETE",
         "header": [],
-        "url": "{{baseurl}}"
+        "url": "{{baseurl}}/delete/{{employeeID}}"
       },
       "response": []
     }
