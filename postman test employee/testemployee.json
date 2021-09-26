@@ -184,42 +184,42 @@
             "url": "{{baseurl}}/employee/1"
           },
           "response": []
+        },
+        {
+          "name": "Get All Employee",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "0b98d657-daf8-42b0-92e0-5bb6f9b3f8ed",
+                "exec": [
+                  "pm.test(\"All Employee Record found Successfully\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    });",
+                  "",
+                  "",
+                  "pm.globals.get(\"variable_key\");",
+                  "pm.variables.get(\"variable_key\");",
+                  "pm.collectionVariables.get(\"variable_key\");",
+                  "pm.environment.set(\"variable_key\", \"variable_value\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "5364893e-5663-4e6d-8556-85013c441fbd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseurl}}/employees"
+          },
+          "response": []
         }
       ],
       "id": "1569090d-2405-49f6-8f01-15967701e7c8"
-    },
-    {
-      "name": "Get All Employee",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "0b98d657-daf8-42b0-92e0-5bb6f9b3f8ed",
-            "exec": [
-              "pm.test(\"All Employee Record found Successfully\", function () {",
-              "    pm.response.to.have.status(200);",
-              "    });",
-              "",
-              "",
-              "pm.globals.get(\"variable_key\");",
-              "pm.variables.get(\"variable_key\");",
-              "pm.collectionVariables.get(\"variable_key\");",
-              "pm.environment.set(\"variable_key\", \"variable_value\");"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "5364893e-5663-4e6d-8556-85013c441fbd",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "{{baseurl}}/employees"
-      },
-      "response": []
     },
     {
       "name": "Update Employee",
