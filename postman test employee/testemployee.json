@@ -143,6 +143,11 @@
       "id": "e8914274-d240-48bd-9495-64001ff762fe"
     },
     {
+      "name": "New Folder",
+      "item": [],
+      "id": "1569090d-2405-49f6-8f01-15967701e7c8"
+    },
+    {
       "name": "Create Employee",
       "id": "36878ab9-6062-48fa-b508-35a731c32314",
       "protocolProfileBehavior": {
