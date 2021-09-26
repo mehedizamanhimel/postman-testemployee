@@ -157,6 +157,33 @@
             "url": null
           },
           "response": []
+        },
+        {
+          "name": "Get Single Employee",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "e3431fca-f6e2-40ce-bbf4-a9eb61978830",
+                "exec": [
+                  "pm.test(\"Single Employee Record found Successfully\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "9dd07492-a040-4e59-a227-12796892f852",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseurl}}/employee/1"
+          },
+          "response": []
         }
       ],
       "id": "1569090d-2405-49f6-8f01-15967701e7c8"
@@ -191,33 +218,6 @@
         "method": "GET",
         "header": [],
         "url": "{{baseurl}}/employees"
-      },
-      "response": []
-    },
-    {
-      "name": "Get Single Employee",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "e3431fca-f6e2-40ce-bbf4-a9eb61978830",
-            "exec": [
-              "pm.test(\"Single Employee Record found Successfully\", function () {",
-              "    pm.response.to.have.status(200);",
-              "    });"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "9dd07492-a040-4e59-a227-12796892f852",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "{{baseurl}}/employee/1"
       },
       "response": []
     },
