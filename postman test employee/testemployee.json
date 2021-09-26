@@ -271,36 +271,36 @@
             "url": "{{baseurl}}/delete/{{employeeID}}"
           },
           "response": []
+        },
+        {
+          "name": "Update Employee",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "43be4bd4-f785-4e46-8bcf-3257c840d845",
+                "exec": [
+                  "pm.test(\"Employee Record updated Successfully\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "bdc6c3e2-e60c-444b-82e9-4313fb1192f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseurl}}/update/21"
+          },
+          "response": []
         }
       ],
       "id": "1569090d-2405-49f6-8f01-15967701e7c8"
-    },
-    {
-      "name": "Update Employee",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "43be4bd4-f785-4e46-8bcf-3257c840d845",
-            "exec": [
-              "pm.test(\"Employee Record updated Successfully\", function () {",
-              "    pm.response.to.have.status(200);",
-              "    });"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "bdc6c3e2-e60c-444b-82e9-4313fb1192f4",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "url": "{{baseurl}}/update/21"
-      },
-      "response": []
     }
   ]
 }
