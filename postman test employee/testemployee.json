@@ -68,7 +68,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "{{baseurl}}"
+        "url": "{{baseurl}}/employee/1"
       },
       "response": []
     },
