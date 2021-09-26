@@ -24,11 +24,17 @@
         {
           "listen": "test",
           "script": {
-            "id": "8bace59f-1ebc-40fd-a65b-8396ad7fa18f",
+            "id": "0b98d657-daf8-42b0-92e0-5bb6f9b3f8ed",
             "exec": [
               "pm.test(\"All Employee Record found Successfully\", function () {",
               "    pm.response.to.have.status(200);",
-              "    });"
+              "    });",
+              "",
+              "",
+              "pm.globals.get(\"variable_key\");",
+              "pm.variables.get(\"variable_key\");",
+              "pm.collectionVariables.get(\"variable_key\");",
+              "pm.environment.set(\"variable_key\", \"variable_value\");"
             ],
             "type": "text/javascript"
           }
