@@ -6,6 +6,143 @@
   },
   "item": [
     {
+      "name": "New Folder Copy",
+      "item": [
+        {
+          "name": "Get user by list",
+          "id": "f0a8b359-19e6-49b5-a2ea-8ddf8ed8c24f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://reqres.in/api/users?page=2",
+              "protocol": "https",
+              "host": [
+                "reqres",
+                "in"
+              ],
+              "path": [
+                "api",
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single user",
+          "id": "fa870b59-2f42-460e-b96f-8d5911589440",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://reqres.in/api/users/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Create User",
+          "id": "89680dc6-4ec9-44be-bf07-f6241eefa8b5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://reqres.in/api/users"
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "id": "5da74130-dbd1-40d4-a8ae-01dc36e0f499",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://reqres.in/api/users/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Register Ok",
+          "id": "2f352e17-c10a-429b-bdb1-a953cafcbf68",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://reqres.in/api/register"
+          },
+          "response": []
+        },
+        {
+          "name": "Register Unsuccessful",
+          "id": "8ce1f26b-29b0-4b10-af17-c85e1c78b0f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://reqres.in/api/users"
+          },
+          "response": []
+        }
+      ],
+      "id": "e8914274-d240-48bd-9495-64001ff762fe"
+    },
+    {
       "name": "Create Employee",
       "id": "36878ab9-6062-48fa-b508-35a731c32314",
       "protocolProfileBehavior": {
