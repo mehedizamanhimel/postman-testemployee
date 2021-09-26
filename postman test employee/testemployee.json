@@ -144,21 +144,22 @@
     },
     {
       "name": "E",
-      "item": [],
+      "item": [
+        {
+          "name": "Create Employee",
+          "id": "36878ab9-6062-48fa-b508-35a731c32314",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "1569090d-2405-49f6-8f01-15967701e7c8"
-    },
-    {
-      "name": "Create Employee",
-      "id": "36878ab9-6062-48fa-b508-35a731c32314",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": null
-      },
-      "response": []
     },
     {
       "name": "Get All Employee",
