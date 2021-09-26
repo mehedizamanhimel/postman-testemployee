@@ -95,7 +95,7 @@
       "request": {
         "method": "PUT",
         "header": [],
-        "url": "{{baseurl}}"
+        "url": "{{baseurl}}/update/21"
       },
       "response": []
     },
