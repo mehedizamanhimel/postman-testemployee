@@ -10,6 +10,20 @@
       "item": [
         {
           "name": "Get user by list",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "192594c2-8e83-4db7-a041-2cb222e931da",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "f0a8b359-19e6-49b5-a2ea-8ddf8ed8c24f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
