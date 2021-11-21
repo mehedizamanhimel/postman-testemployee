@@ -16,8 +16,19 @@
               "script": {
                 "id": "192594c2-8e83-4db7-a041-2cb222e931da",
                 "exec": [
+                  "var jsonData = pm.response.json();",
+                  "console.log(jsonData)",
+                  "",
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"verify per page info\", function () {",
+                  "    pm.expect(jsonData.per_page).to.eql(6);",
+                  "});",
+                  "",
+                  "pm.test(\"Verify total page info\", function () {",
+                  "    pm.expect(jsonData.total_pages).to.eql(2);",
                   "});"
                 ],
                 "type": "text/javascript"
