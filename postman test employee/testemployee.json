@@ -29,6 +29,10 @@
                   "",
                   "pm.test(\"Verify total page info\", function () {",
                   "    pm.expect(jsonData.total_pages).to.eql(2);",
+                  "});",
+                  "",
+                  "pm.test(\"Verify page info\", function () {",
+                  "    pm.expect(jsonData.page).to.eql(2);",
                   "});"
                 ],
                 "type": "text/javascript"
