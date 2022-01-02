@@ -35,6 +35,12 @@
                   "    pm.expect(jsonData.page).to.eql(2);",
                   "});",
                   "",
+                  "pm.test(\"Verify data object\", function () {",
+                  "    for(int j=0; j <= jsonData.data.size(); i++)",
+                  "    pm.expect(jsonData.page).to.eql(2);",
+                  "",
+                  "});",
+                  "",
                   ""
                 ],
                 "type": "text/javascript"
